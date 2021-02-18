@@ -183,17 +183,12 @@ void click(int* move)
     if (gamestate[*move][*(move + 1)] == -1)
     {
         struct Square nbs = get_neighbours(move);
-        int *parray[9]; // create an array to store pointers to the 0th index of all squares
-
-        for (int x = 0; x < 9; x++)
-            parray[x] = &nbs.nbrs[x][0];
-
-        int **neighbours = &parray[0];
-        int total_nbrs = **neighbours;
+        
+        int total_nbrs = nbs.nbrs[0][0];
         int num_mines = 0;
         
         for (int i = 1; i <= total_nbrs; i++)
-            if (gamestate[**(neighbours + i)][*(*(neighbours + i) + 1)] == -2)
+            if (gamestate[nbs.nbrs[i][0]][nbs.nbrs[i][1]] == -2)
                 num_mines += 1;
         
         gamestate[*move][*(move + 1)] = num_mines;
@@ -202,7 +197,7 @@ void click(int* move)
         if (num_mines == 0)
         {
             for (int i = 1; i <= total_nbrs; i++) 
-                click(*(neighbours + i));
+                click(&nbs.nbrs[i][0]);
         }
     }
 }
