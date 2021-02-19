@@ -20,6 +20,18 @@ text = "abcd"   # string
 x = 6.9         # float (i.e. decimal numbers)
 ```
 
+Some of the standard data types provided by Python are:
+
+| Category | Data types |
+| ---- | ----- |
+| Text | str |
+| Numeric | int, float, complex |
+| Sequence | list, tuple, set |
+| Mapping | dict |
+| Boolean | bool |
+| Binary | bytes, bytearray, memoryview |
+
+
 Data Types don't need to be explicity defined by the user. During *run-time* itself, variables get their data type from the data type of the value assigned to them. However, you *cannot* assign a value of a different data type to this variable once it has been assigned this data type.
 These facts are summarised in two simple terms: Python is a *Dynamic* and a *Strongly-typed* language.
 
