@@ -177,7 +177,41 @@ Table of 3
 
 ## While Loop
 
+In order to execute a block of code *while a certain condition holds true*, we use the 'while' loop.
+Sometimes, a while loop could be converted to a for loop that performs the same action, and vice-versa.
 
+```py
+i = 1
+
+while i < 10:
+    print(i)
+    i += 1
+
+'''
+Output
+----------------
+1
+2
+3
+4
+5
+6
+7
+8
+9
+'''
+```
+
+The while loop works as follows: First it checks the condition. If it is true, then the block of code under it gets executed, and we go back to the condition to check it. If it's still true, then the block is executed again, and so on. If the condition return false, then the block is not executed, and the while loop gets terminated.
+
+Since the condition provided to while loop eventually boils down to either 'true' or 'false', so if desired, we can also *directly pass* ```true``` or ```false``` to it. (Note: We never directly pass a 'false' to the while loop, because the while loop would just immediately get terminated, and so the block of code would *never* get executed. So it basically just makes the entire code pointless!)
+
+```py
+while True:
+    print("Hello world!")
+```
+
+The above code is technically correct, but it should *not* be executed! Because it is an *Infinite Loop*, which will cause the print() statement to execute "Hello world!" forever!!
 
 ## Jump Statements
 
