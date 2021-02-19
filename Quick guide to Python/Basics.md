@@ -24,11 +24,13 @@ Data Types don't need to be explicity defined by the user. During *run-time* its
 These facts are summarised in two simple terms: Python is a *Dynamic* and a *Strongly-typed* language.
 
 **Statically-typed**: Means that the data type is assigned at the very moment when the program is *compiled* (which happens before run-time). Examples: C, C++
+
 **Dynamically-typed**: Means that the data type of the variable is assigned to it during *Run-time*. Examples: Python, JavaScript, PHP
 
 There is no precise technical definition to strong and weak typing, but in general they refer to the following ideas
 
 **Strongly-typed**: Means that the language has stricter typing rules, and hence there is a greater chance of getting errors or exceptions during compilation/run-time. Examples: Python, C#, Java.
+
 **Weakly-typed**: Means that the language has weaker typing rules (in other words, it is somewhat "loosely typed"). There is more freedom and less chance of getting typing related errors. But the downside of this is unexpected behaviour of *flawed code* (because the language allows it to run, whereas a strongly typed language would never have let it run). Examples: JavaScript, PHP, C.
 
 Some common features of strongly-typed languages are:
