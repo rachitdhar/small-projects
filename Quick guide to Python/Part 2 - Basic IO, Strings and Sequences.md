@@ -103,20 +103,32 @@ You can obtain either single characters, or groups of characters from a string b
 ```py
 name = "Rachit"
 
-print(name[0]) # Indexing. Output will be: R
-print(name[4]) # Indexing. Output will be: i
-print(name[-1]) # Again indexing. Output will be: t
+print(name[0])          # Indexing. Output will be: R
+print(name[4])          # Indexing. Output will be: i
+print(name[-1])         # Again indexing. Output will be: t
 
-print(name[0:3]) # Slicing. Output will be: Rac
-print(name[0:1]) # Slicing. Output will be: R
-print(name[0:5]) # Slicing. Output will be: Rachi
-print(name[2:4]) # Slicing. Output will be: ch
-print(name[3:5]) # Slicing. Output will be: hi
-print(name[-4:-1]) # Slicing. Output will be: chi
-print(name[0:]) # Slicing. Output will be: Rachit
-print(name[:]) # Slicing. Output will be: Rachit
+print(name[0:3])        # Slicing. Output will be: Rac
+print(name[0:1])        # Slicing. Output will be: R
+print(name[0:5])        # Slicing. Output will be: Rachi
+print(name[2:4])        # Slicing. Output will be: ch
+print(name[3:5])        # Slicing. Output will be: hi
+print(name[-4:-1])      # Slicing. Output will be: chi
+print(name[0:])         # Slicing. Output will be: Rachit
+print(name[:])          # Slicing. Output will be: Rachit
 ```
 
 From the above examples of slicing, you must have noticed that when performing slicing, the first index is *included* but the second (closing) index is *excluded*. For example, ```[2:5]``` would mean indexes 2, 3 and 4.
+
+Apart from this, there are several functions and methods in python to perform string operations. Some common ones are: ```len()``` (to get the length of a string), ```.strip()```, ```.split()```, ```.join()```, ```.upper(), .lower(), .title()```, and many more.
+
+Strings can be concatenated together normally using the '+' operator.
+
+```py
+str1 = "cat"
+str2 = "dog"
+
+s = str1 + str2
+print(s) # Output is: catdog
+```
 
 ## Sequences
