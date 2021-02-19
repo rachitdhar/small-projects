@@ -202,7 +202,7 @@ Output
 '''
 ```
 
-The while loop works as follows: First it checks the condition. If it is true, then the block of code under it gets executed, and we go back to the condition to check it. If it's still true, then the block is executed again, and so on. If the condition return false, then the block is not executed, and the while loop gets terminated.
+The while loop works as follows: First it checks the condition. If it is true, then the block of code under it gets executed, and we go back to the condition to check it. If it's still true, then the block is executed again, and so on. If the condition returns false, then the block is not executed, and the while loop gets terminated.
 
 Since the condition provided to while loop eventually boils down to either 'true' or 'false', so if desired, we can also *directly pass* ```True``` or ```False``` to it. (Note: We never directly pass a 'false' to the while loop, because the while loop would just immediately get terminated, and so the block of code would *never* get executed. So it basically just makes the entire code pointless!)
 
