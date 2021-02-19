@@ -119,7 +119,7 @@ print(name[:])          # Slicing. Output will be: Rachit
 
 From the above examples of slicing, you must have noticed that when performing slicing, the first index is *included* but the second (closing) index is *excluded*. For example, ```[2:5]``` would mean indexes 2, 3 and 4.
 
-Apart from this, there are several functions and methods in python to perform string operations. Some common ones are: ```len()``` (to get the length of a string), ```.strip()```, ```.split()```, ```.join()```, ```.upper(), .lower(), .title()```, and many more.
+Apart from this, there are several functions and methods in python to perform string operations. Some common ones are: ```len()``` (to get the length of a string), ```.strip(), .split(), .join(), .upper(), .lower(), .title()```, and many more.
 
 Strings can be concatenated together normally using the '+' operator.
 
