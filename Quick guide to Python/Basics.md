@@ -27,6 +27,8 @@ These facts are summarised in two simple terms: Python is a *Dynamic* and a *Str
 
 **Dynamically-typed**: Means that the data type of the variable is assigned to it during *Run-time*. Examples: Python, JavaScript, PHP
 
+
+
 There is no precise technical definition to strong and weak typing, but in general they refer to the following ideas
 
 **Strongly-typed**: Means that the language has stricter typing rules, and hence there is a greater chance of getting errors or exceptions during compilation/run-time. Examples: Python, C#, Java.
