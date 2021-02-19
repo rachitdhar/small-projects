@@ -47,3 +47,29 @@ FILE *f = fopen("random_file.txt", "w");
 
 2. Harder to perform type-conversions. It is difficult to convert data stored in one data type into another data type. (Conversion is usually assisted through type-casting).
 3. There is usually no feature of using pointers in strongly-typed languages (because pointers could allow you to bypass the type-checking through pointer arithmetic).
+
+## Operators
+
+The standard categories of operators in python are:
+
+1. **Arithmetic Operators**: +, -, *, / (float division), // (floor division), % (modulus), ** (exponentiation)
+
+2. **Relational / Comparison Operators**: >, <, ==, !=, >=, <=
+
+3. **Logical Operators**: and, or, not
+
+4. **Assignment Operators**: =, +=, -=, *=, /=, //=, %=, **=, etc.
+
+There are some more operators apart from these which are not so commonly used:
+
+```python
+a is b
+a is not b
+
+x = [1,2,3]
+print(3 in x)
+print(1 not in x)
+```
+
+Python also has Bitwise operators (to perform arithmetic on bits).\
+There is also a concept called *Operator precedence* which prevents ambiguity when multiple operators are being used in a certain arithmetic calculation.
