@@ -7,7 +7,7 @@ Firstly, we will see how to print something in python. For this we have the prin
 print("Hello world!")
 ```
 
-To make the print() function ignore some character, we can use '\'. Also, we use '\n' for newline and '\t' for getting a tab.
+To make the print() function ignore some character, we can use "\". Also, we use '\n' for newline and '\t' for getting a tab.
 
 ```python
 print("To print quotes, we must ignore them this way: \"Hello world!\"")
