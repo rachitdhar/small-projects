@@ -95,7 +95,7 @@ For example: Take the string "Hello world!"
 
 | H | e | l | l | o |   | w | o | r | l | d | ! |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+| 00 | 01 | 02 | 03 | 04 | 05 | 06 | 07 | 08 | 09 | 10 | 11 |
 |-12|-11|-10|-9|-8|-7|-6|-5|-4|-3|-2|-1|
 
 You can obtain either single characters, or groups of characters from a string by performing indexing or slicing operations respectively:
