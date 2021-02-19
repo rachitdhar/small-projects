@@ -58,4 +58,35 @@ age = int(input("Please enter your age: "))
 
 ## Strings
 
+String is a text datatype in python. You can make a string variable in the following ways:
+
+```py
+string1 = "hello everyone!"     # The standard preferred way
+string2 = 'world'               # An alternative (in some languages, like C, this way is used
+                                # to store character datatype intead of strings)
+string3 = '''this is python'''  # A docstring
+```
+
+The Docstring is generally only used when you want to create multi-line comments in python:
+
+```py
+'''
+This is a
+very very long, and in fact, an
+unnecessarily lengthy
+sentence, displayed
+using a docstring.
+
+Since this is a comment,
+it will be ignored completely during execution of the code
+'''
+```
+
+In most cases, you would probably be satisfied by using simple single line comments!
+
+```py
+# Hey there! This is a comment
+But this is not a comment, and will lead to an error if you execute this code!
+```
+
 ## Sequences
