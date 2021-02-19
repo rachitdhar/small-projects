@@ -44,6 +44,18 @@ age = 20
 print(f"I am {age} years old")
 ```
 
+Now, for taking input from a user, python provides the input() function:
+
+```py
+name = input("Enter your name: ")
+```
+
+By default, the input() function returns string datatype. If you want it to return some other datatype, then you must remember to perform type-casting while taking the input:
+
+```py
+age = int(input("Please enter your age: "))
+```
+
 ## Strings
 
 ## Sequences
