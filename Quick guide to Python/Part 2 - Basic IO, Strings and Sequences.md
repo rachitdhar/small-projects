@@ -89,4 +89,15 @@ In most cases, you would probably be satisfied by using simple single line comme
 But this is not a comment, and will lead to an error if you execute this line!
 ```
 
+In python you have special features called *Indexing and Slicing*. Every character of a string has an index, starting from 0. Negative indexes are used to read the string backwards.
+
+For example: Take the string "Hello world!"
+
+| H | e | l | l | o |   | w | o | r | l | d | ! |
+|-----------------------------------------------|
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 |
+|-12|-11|-10|-9|-8|-7|-6|-5|-4|-3|-2|-1|
+
+
+
 ## Sequences
