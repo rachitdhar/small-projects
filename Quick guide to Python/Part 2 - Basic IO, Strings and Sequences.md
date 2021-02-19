@@ -86,7 +86,7 @@ In most cases, you would probably be satisfied by using simple single line comme
 
 ```py
 # Hey there! This is a comment
-But this is not a comment, and will lead to an error if you execute this code!
+But this is not a comment, and will lead to an error if you execute this line!
 ```
 
 ## Sequences
