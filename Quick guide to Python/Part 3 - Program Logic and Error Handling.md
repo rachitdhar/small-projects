@@ -186,10 +186,10 @@ i = 1
 while i < 10:
     print(i)
     i += 1
-
-'''
+```
+```
 Output
-----------------
+=====================
 1
 2
 3
@@ -199,7 +199,6 @@ Output
 7
 8
 9
-'''
 ```
 
 The while loop works as follows: First it checks the condition. If it is true, then the block of code under it gets executed, and we go back to the condition to check it. If it's still true, then the block is executed again, and so on. If the condition returns false, then the block is not executed, and the while loop gets terminated.
