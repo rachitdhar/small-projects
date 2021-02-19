@@ -14,10 +14,10 @@ Topics we will cover here:
 
 In python you don't need to declare a variable. You can directly assign a value to a variable to declare it. 
 
-```
-a = 3           // integer
-text = "abcd"   // string
-x = 6.9         // float (i.e. decimal numbers)
+```python
+a = 3           # integer
+text = "abcd"   # string
+x = 6.9         # float (i.e. decimal numbers)
 ```
 
 Data Types don't need to be explicity defined by the user. During *run-time* itself, variables get their data type from the data type of the value assigned to them. However, you *cannot* assign a value of a different data type to this variable once it has been assigned this data type.
@@ -26,8 +26,6 @@ These facts are summarised in two simple terms: Python is a *Dynamic* and a *Str
 **Statically-typed**: Means that the data type is assigned at the very moment when the program is *compiled* (which happens before run-time). Examples: C, C++
 
 **Dynamically-typed**: Means that the data type of the variable is assigned to it during *Run-time*. Examples: Python, JavaScript, PHP
-
-
 
 There is no precise technical definition to strong and weak typing, but in general they refer to the following ideas
 
@@ -39,7 +37,8 @@ Some common features of strongly-typed languages are:
 
 1. Explicit type definition to variables (To have to specify the type of a variable at the time of declaration). This is not followed by python (although python is called strongly typed due to other features). Also, even though C *does* follow this, it is instead usually considered weakly-typed (due to other features of the language). 
 Some C code showing explicit type-definitions:
-```
+
+```C
 int a;
 char c = 'z';
 float m = 0.98;
