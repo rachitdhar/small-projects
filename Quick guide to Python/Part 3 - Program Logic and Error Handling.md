@@ -213,6 +213,100 @@ while True:
 
 The above code is technically correct, but it should *not* be executed! Because it is an *Infinite Loop*, which will cause the print() statement to execute "Hello world!" forever!!
 
+In Python, there is also a unique feature of using the 'else' keyword after a 'For' or 'While' loop. The code inside 'else' gets executed when the for loop gets over, or when the condition of the while loop returns false, respectively.
+
+```py
+i = 1
+
+while i < 9:
+    print(i)
+else:
+    print("Oops! i is not less than 9 anymore!")
+```
+
 ## Jump Statements
 
+Jump statements are some unique keywords in python that can be used to bypass a certain block of code in a certain specific manner, depending upon which keyword you used. There are three jump keywords in python: ```pass```, ```break``` and ```continue```.
+
+The ```pass``` keyword is actually very simple. It is basically a null statement, i.e. it literally does nothing. The difference between a comment and a pass statement is that the python interpreter completely ignores a comment. But the pass statement is *not* ignored. The statement just doesn't *do* anything. It can be used in places where you must write *something* (i.e. places that you can't leave blank, or else it would produce an error), but you don't want to execute anything.
+
+```py
+# to print numbers from 1 to 9, but not 8
+i = 1
+
+while i < 10:
+    if i == 8:
+        pass
+    else:
+        print(i)
+
+    i += 1
+
+# Note: This is NOT the most efficient way to write this program.
+# Alternative solutions exist. This is just an example for demonstration.
+```
+
+The next keyword (which is perhaps the most important of them all) is the ```break``` statement. When a break statement is executed inside a loop, it immediately causes the termination of that loop (i.e. any code after the break statement won't be executed if the break statement gets executed, and the program will come out of the loop)
+
+```py
+list_of_names = list()
+
+while True:
+    name = input("Enter a name: ")
+    list_of_names += [name]
+
+    more_names = input("Do you want to enter more names? (y/n): ")
+
+    if more_names.lower() == "n":
+        break
+
+# display all the names stored in the list
+print(list_of_names)
+```
+
+The ```continue``` statement is used inside a loop, when you want to bypass the part of the block of code within the loop that comes after the 'continue' statement, but then go back to the loop condition, and the loop goes on again (i.e. obviously only if the loop condition returns true).
+
+```py
+# to print numbers from 1 to 9, but not 8
+i = 1
+
+while i < 10:
+
+    if i == 8:
+        i += 1
+        continue
+    
+    print(i)
+    i += 1
+
+# Note: This is NOT the most efficient way to write this program.
+# Alternative solutions exist. This is just an example for demonstration.
+```
+
 ## Error Handling
+
+Sometimes for some reason you cannot prevent an error from occuring in a program. This may be due to various reasons (for example: the user entering a string, when she/he was supposed to enter an integer). For such scenarios, it becomes very convenient to have a feature that can handle *any* error that occurs within a certain block of code where you expect the possibility of an error to occur.
+
+In python, error handling is performed using a 'Try-Except' block. Here, you enter the error-prone code inside the 'try' block. In case the block of code produces an error during run-time, the program immediately goes to the block of code under the 'catch' statement. The code under 'catch' is supposed to be executed only when an error occurs inside the 'try' block.
+
+You can also *cause an error to occur* on demand, by using the ```raise``` keyword. On doing this, the program will go and execute the code under 'catch' statement, just as if any ordinary error has occured.
+
+```py
+age = int()
+
+while True:
+    try:
+        age = int(input("Enter your age: "))
+
+        if age < 0:
+            raise
+
+        break
+    except:
+        print("Sorry, you must enter a positive integer value")
+
+if age >= 18:
+    print("You can vote")
+else:
+    print("You cannot vote")
+```
