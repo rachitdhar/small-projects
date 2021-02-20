@@ -35,6 +35,8 @@ Some of the standard data types provided by Python are:
 Data Types don't need to be explicity defined by the user. During *run-time* itself, variables get their data type from the data type of the value assigned to them. However, you *cannot* assign a value of a different data type to this variable once it has been assigned this data type.
 These facts are summarised in two simple terms: Python is a *Dynamic* and a *Strongly-typed* language.
 
+### Type Systems in Languages
+
 **Statically-typed**: Means that the data type is assigned at the very moment when the program is *compiled* (which happens before run-time). Examples: C, C++
 
 **Dynamically-typed**: Means that the data type of the variable is assigned to it during *Run-time*. Examples: Python, JavaScript, PHP
