@@ -202,4 +202,3 @@ Some of the standard modes in which files can be opened in python are:
 | wb | To open a new/existing binary file for writing purpose |
 | rb+ | To both read and write a binary file |
 | wb+ | To both write and read a binary file |
-
