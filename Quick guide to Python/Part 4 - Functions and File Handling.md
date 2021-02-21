@@ -202,3 +202,43 @@ Some of the standard modes in which files can be opened in python are:
 | wb | To open a new/existing binary file for writing purpose |
 | rb+ | To both read and write a binary file |
 | wb+ | To both write and read a binary file |
+
+We use ```.write()``` and ```.read()``` methods to write to and read from a file respectively. There are several other methods as well, to work with files in python. After a file has been used, you must close it using the ```.close()``` method.
+
+```py
+# write data to a file
+f = open("some_file.txt", "w")
+
+data = "some data can be written here\n"\
+        "for entering into the file"
+
+f.write(data)
+f.close()
+
+# read data from a file
+f = open("random_file.txt", "r")
+
+data_retrieved = f.read()
+f.close()
+
+print(data) # to display data stored in the file
+```
+
+Python also has a special module called ```pickle```, to work on Binary files.
+
+```py
+import pickle
+
+d = {1:"apple", 2:"banana"}
+f = open("some_file.txt", "wb")
+
+pickle.dump(d, f) # to store the dictionary in the file
+f.close()
+
+f = open("some_file.txt", "rb")
+dict_retrieved = pickle.load(f) # retrieves the dictionary and stores it
+                                # and stores it in the variable dict_retrieved
+                                # (pickle.load() gets only the latest thing that was 'dumped')
+```
+
+Say if you dumped 3 objects: obj1, obj2, and obj3, one at a time (i.e. you called .dump() method 3 separate times). Now, if you use .load(), you will first get obj3. Then if you call it again, you'll get obj2, and next obj1.
