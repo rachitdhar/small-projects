@@ -6,4 +6,4 @@ One major programming concept that has emerged in modern programming languages i
 
 
 
-## Classes: Object Oriented Programming (OOP)
+## Classes
