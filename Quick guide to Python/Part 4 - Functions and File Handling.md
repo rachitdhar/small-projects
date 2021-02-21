@@ -239,6 +239,7 @@ f = open("some_file.txt", "rb")
 dict_retrieved = pickle.load(f) # retrieves the dictionary and stores it
                                 # and stores it in the variable dict_retrieved
                                 # (pickle.load() gets only the latest thing that was 'dumped')
+f.close()
 ```
 
 Say if you dumped 3 objects: obj1, obj2, and obj3, one at a time (i.e. you called .dump() method 3 separate times). Now, if you use .load(), you will first get obj3. Then if you call it again, you'll get obj2, and next obj1.
