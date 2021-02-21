@@ -134,6 +134,17 @@ def sort_nums():
     print(nums)
 ```
 
+Python also provides a unique feature called *Lambda Functions*. These are anonymous single-line functions, used mostly for small things that are required only for a short period of time.
+
+```py
+x = lambda a : a + 10       # 'a' is the parameter for this lambda function
+                            # and the value of the function is returned and stored into x.
+print(x(2))     # prints 12
+
+y = lambda a,b,c : (a * b * c)
+print(y(1,2,8)) # prints 16
+```
+
 ## Local and Global Scope
 
 When you create a variable outside of any function, then that variable is going to persist throughout the rest of the program, and most importantly, *it can be accessed anywhere in the entire program*. Such a variable is called a **Global scope variable**.
@@ -164,4 +175,31 @@ for i in range(3):
 ```
 
 ## File Handling
+
+Just like ```int(), str(), list()``` etc., there is another kind of object in python, called a file. You can create a file variable using the ```open()``` function. The open() function is used to open a new file (i.e. in other words, create it, and then open it) or open an existing file. To open an existing file for reading purposes:
+
+```py
+my_file = open("some_file.txt", "r")
+```
+
+The first argument is either the path to the file, or directly the name of the file ONLY in case if it lies in the CURRENT WORKING DIRECTORY. The second argument tells the mode in which to open the file. You can find the current working directory using the following code:
+
+```py
+import os
+print(os.getcwd()) # cwd : current working directory
+```
+
+Some of the standard modes in which files can be opened in python are:
+
+| Mode | Description |
+| ---- | ----------- |
+| r | To read the existing file |
+| w | To open a new/existing file for writing purpose |
+| a | To open a new/existing file for appending data |
+| w+ | Both write and read |
+| r+ | Both read and write |
+| rb | To read a binary file |
+| wb | To open a new/existing binary file for writing purpose |
+| rb+ | To both read and write a binary file |
+| wb+ | To both write and read a binary file |
 
