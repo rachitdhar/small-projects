@@ -176,7 +176,7 @@ for i in range(3):
 
 ## File Handling
 
-Just like ```int(), str(), list()``` etc., there is another kind of object in python, called a file. You can create a file variable using the ```open()``` function. The open() function is used to open a new file (i.e. in other words, create it, and then open it) or open an existing file. To open an existing file for reading purposes:
+Just like ```int(), str(), list()``` etc., there is another kind of object in python, called a file. Files are important in several ways. One major use of files is as an *external storage*, which would allow you to store data related to your program within the computer memory permanently. You can then retrieve this data when your program runs the next time. In this way, you can build programs that *don't need to start from scratch each time you run them*. You can create a file variable using the ```open()``` function. The open() function is used to open a new file (i.e. in other words, create it, and then open it) or open an existing file. To open an existing file for reading purposes:
 
 ```py
 my_file = open("some_file.txt", "r")
