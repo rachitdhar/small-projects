@@ -243,3 +243,14 @@ f.close()
 ```
 
 Say if you dumped 3 objects: obj1, obj2, and obj3, one at a time (i.e. you called .dump() method 3 separate times). Now, if you use .load(), you will first get obj3. Then if you call it again, you'll get obj2, and next obj1.
+
+A more convenient (and somewhat 'safer') way to use a file, is through the ```with``` keyword. This ensures that all code related to the handling of the opened file remains within the "with"-block of code. After the 'with'-block is over, the file is automatically closed by the python interpreter, so there's no need for explicitly closing the file (hence, making it a 'safer' way of opening files).
+
+```py
+with open("some_random_file.txt", "w") as f:
+    # your code
+
+# you cannot use the file outside
+# the 'with'-block since it gets closed
+# when you come out of the block
+```
