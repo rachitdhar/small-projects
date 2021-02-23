@@ -30,7 +30,7 @@ print(listdir(mypath))
 print("\nCWD Path: " + mypath)
 ```
 
-## The \__name\__ variable
+## The \_\_name\_\_ variable
 
 Python has some special built-in variables. They are written with double underscores on both sides so that the python interpreter can recognise them to be special built-in variables rather than ordinary user defined variables. The most well known of these is the ```__name__``` variable. It contains the name of the module within which you imported this file. However, if you run the file directly, then the variable ```__name__``` for that file is assigned the value "__main__" instead. This helps you distinguish between a file that is executed directly, from a file that was *imported into a file which was executed directly*, and hence got indirectly executed as well.
 
